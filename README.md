@@ -22,7 +22,7 @@ th main.lua -data [path to ImageNet dataset] -nGPU 1 -batchSize 128 -netType ale
 ``` 
 ### Training XNOR-Networks
 ```bash
-th main.lua -data /mnt/raid00/data/imagenet2012/ -nGPU 4 -batchSize 800 -netType alexnetxnor -binaryWeight -optimType adam -epochSize 1500
+th main.lua -data [path to ImageNet dataset] -nGPU 4 -batchSize 800 -netType alexnetxnor -binaryWeight -optimType adam -epochSize 1500
 ```
 ### Trained Models
 To use the trained models use the option `-retrain`
