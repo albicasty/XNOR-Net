@@ -1,12 +1,12 @@
-##XNOR-Net: ImageNet Classification Using Binary Convolutional Neurl Networks.
+##XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks.
 
-This is the Torch 7.0 implementation of XNOR-Net: ImageNet Classification Using Binary Convolutional Neurl Networks.
+This is the Torch 7.0 implementation of XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks.
 
 ### Citation 
 ```bash
 @inproceedings{rastegariECCV16,
     Author = {Mohammad Rastegari and Vicente Ordonez and Joseph Redmon and Ali Farhadi},
-    Title = {XNOR-Net: ImageNet Classification Using Binary Convolutional Neurl Networks},
+    Title = {XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks},
     Booktitle = {ECCV},
     Year = {2016}
 }
