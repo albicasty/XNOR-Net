@@ -17,7 +17,7 @@ This software is implemented on top of the implementation of [ImageNet-multiGPU]
 
 Create cache files by running:
 ```bash
-th CreateCacheFiles.lua -cache [path to the cache folder] -data [path to ImageNet dataset] -nDonkeys 1
+th CreateCacheFiles.lua -cache [path to the cache folder] -data [path to ImageNet dataset] -nDonkeys 0
 ```
 
 ### Training Binary Weight Network

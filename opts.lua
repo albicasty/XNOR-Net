@@ -41,6 +41,7 @@ function M.parse(arg)
     cmd:option('-weightDecay',     0, 'weight decay')
     cmd:option('-shareGradInput',  true, 'Sharing the gradient memory')
     cmd:option('-binaryWeight',    false, 'Sharing the gradient memory')
+    cmd:option('-testOnly',    false, 'Sharing the gradient memory')
     ---------- Model options ----------------------------------
     cmd:option('-netType',     'alexnet', 'Options: alexnet | overfeat | alexnetowtbn | vgg | googlenet | resnet')
     cmd:option('-optimType',     'sgd', 'Options: sgd | adam')

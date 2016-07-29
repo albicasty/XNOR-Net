@@ -29,7 +29,7 @@ paths.dofile('util.lua')
 
 print(opt)
 
-torch.manualSeed(opt.manualSeed)
+torch.manualSeed(4)
 
 print('Saving everything to: ' .. opt.save)
 os.execute('mkdir -p ' .. opt.save)
