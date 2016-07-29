@@ -26,7 +26,9 @@ th main.lua -data /mnt/raid00/data/imagenet2012/ -nGPU 4 -batchSize 800 -netType
 ```
 ### Trained Models
 To use the trained models use the option `-retrain`
+
 [Binary-Weight-Network(BWN)](https://s3-us-west-2.amazonaws.com/ai2-vision/xnornet/alexnet_BWN.t7)
+
 [XNOR-Network](https://s3-us-west-2.amazonaws.com/ai2-vision/xnornet/alexnet_XNOR.t7)
 
 ### License
