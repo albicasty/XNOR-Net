@@ -15,6 +15,11 @@ This is the Torch 7.0 implementation of XNOR-Net: ImageNet Classification Using 
 ### Requirements
 This software is implemented on top of the implementation of [ImageNet-multiGPU](https://github.com/soumith/imagenet-multiGPU.torch) and has all the same requirements.
 
+Download the cache files from [here](https://s3-us-west-2.amazonaws.com/ai2-vision/xnornet/cache.tar) and run:
+```bash
+tar -xvf ./cache.tar
+```
+
 ### Training Binary Weight Network
 
 ```bash
