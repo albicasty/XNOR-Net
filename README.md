@@ -16,7 +16,7 @@ This is the Torch 7.0 implementation of XNOR-Net: ImageNet Classification Using 
 This software is implemented on top of the implementation of [ImageNet-multiGPU](https://github.com/soumith/imagenet-multiGPU.torch) and has all the same requirements.
 
 ### Training Binary Weight Network
-You just need to run this:
+
 ```bash
 th main.lua -data [path to ImageNet dataset] -nGPU 1 -batchSize 128 -netType alexnet -binaryWeight -dropout 0.1
 ``` 
