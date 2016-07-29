@@ -30,7 +30,7 @@ th main.lua -data [path to ImageNet dataset] -nGPU 1 -batchSize 128 -netType ale
 th main.lua -data [path to ImageNet dataset] -nGPU 4 -batchSize 800 -netType alexnetxnor -binaryWeight -optimType adam -epochSize 1500
 ```
 ### Trained Models
-To use the trained models use the option `-retrain`
+To use the trained models use the option `-retrain [path to the trained model file]` and `-testOnly`
 
 [Binary-Weight-Network(BWN)](https://s3-us-west-2.amazonaws.com/ai2-vision/xnornet/alexnet_BWN.t7)
 
