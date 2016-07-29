@@ -56,13 +56,14 @@ local mean,std
 
 -- function to load the image, jitter it appropriately (random crops etc.)
 local trainHook = function(self, path)
-   if string.find(path,"/mnt/raid00/data/imagenet2012/") then
-     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012/",opt.data)
+   if string.find(path,"/mnt/raid00/data/imagenet2012") then
+     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012",opt.data)
    end
    collectgarbage()
    opt.testMode = false
    local excep, input = pcall(loadImage,path);
    if not excep then
+      print('ERROR: image can not be loaded!!!')
       input = torch.Tensor(3,opt.imageSize,opt.imageSize):fill(mean[1]);
    end
    local iW = input:size(3)
@@ -129,13 +130,14 @@ end
 
 -- function to load the image
 testHook = function(self, path)
-   if string.find(path,"/mnt/raid00/data/imagenet2012/") then
-     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012/",opt.data)
+   if string.find(path,"/mnt/raid00/data/imagenet2012") then
+     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012",opt.data)
    end
    collectgarbage()
    opt.testMode = true
    local excep, input = pcall(loadImage,path);
    if not excep then
+      print('ERROR: image can not be loaded!!!')
       input = torch.Tensor(3,opt.imageSize,opt.imageSize):fill(mean[1]);
    end
    local oH = sampleSize[2]
