@@ -36,5 +36,15 @@ To use the trained models use the option `-retrain [path to the trained model fi
 
 [XNOR-Network](https://s3-us-west-2.amazonaws.com/ai2-vision/xnornet/alexnet_XNOR.t7)
 
+If you use the same image pre-processing as [here](https://github.com/soumith/imagenet-multiGPU.torch) by
+```bash
+find . -name "*.JPEG" | xargs -I {} convert {} -resize "256^>" {}
+``` 
+then the accuracies for top-1 should be: 
+
+alexnet_BWN  %56.8
+
+alexnet_XNOR %43.3 
+
 ### License
 By downloading this software you acknowledged that you agreed on the terms and conditions in the `SOFTWARE-LICENSE-AGREEMENT.lic`
